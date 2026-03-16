@@ -198,8 +198,8 @@ params:
       - 这里没有高深理论，只有点滴的记录。
 
       - 愿路过的你，能在这里找到一点你需要的。
-
-      /n🏡🌈🍉🌟📍🎆🎇🧨🧨👋✨ ✨
+      <br><br>
+      🏡🌈🍉🌟📍🎆🎇🧨🧨👋✨ ✨
 
 
   # ---------- 社交媒体图标 ----------
@@ -207,7 +207,7 @@ params:
   socialIcons:
     - name: github
       title: GitHub
-      url: "https://github.com/monstercjz/PaperMod-blog-cf"
+      url: "https://github.com/monstercjz/PaperMod-Blog-Cloudflare"
     - name: QQ
       title: QQ
       url: "https://qm.qq.com/cgi-bin/qm/qr?k=YOUR_QQ_KEY"
