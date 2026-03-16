@@ -176,7 +176,7 @@ params:
   profileMode:
     enabled: true              # 是否启用 ProfileMode
     title: 冇记                 # 大标题
-    imageUrl: "/static/android-chrome-512x512.png"               # 头像图片地址
+    imageUrl: "/android-chrome-512x512.png"               # 头像图片地址
     imageTitle: 冇文化的头像    # 图片 alt 文本
     # imageWidth: 120           # 头像宽度
     # imageHeight: 120          # 头像高度
