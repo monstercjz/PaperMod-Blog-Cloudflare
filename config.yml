@@ -6,7 +6,7 @@ module:
     - path: github.com/adityatelange/hugo-PaperMod
     - path: github.com/monstercjz/blog-content
   mounts:
-    - source: content
+    - source: .
       target: content
 
 # ============================================================
