@@ -6,7 +6,7 @@ module:
     - path: github.com/adityatelange/hugo-PaperMod
     - path: github.com/monstercjz/blog-content
       mounts:
-        - source: posts          # 内容仓库的posts目录
+        - source: blog-paper          # 内容仓库的posts目录
           target: content/posts  # 挂载到 content/posts
 
 # ============================================================
