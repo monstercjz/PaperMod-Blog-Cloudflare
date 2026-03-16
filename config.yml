@@ -202,16 +202,16 @@ params:
 
   # ---------- 社交媒体图标 ----------
   # 显示在页面底部的社交链接图标
-  # socialIcons:
-  #   - name: github
-  #     title: GitHub
-  #     url: "https://github.com/monstercjz/PaperMod-blog-cf"
-  #   - name: QQ
-  #     title: QQ
-  #     url: "https://qm.qq.com/cgi-bin/qm/qr?k=YOUR_QQ_KEY"
-  #   - name: telegram
-  #     title: Telegram
-  #     url: "https://t.me/YOUR_TELEGRAM"
+  socialIcons:
+    - name: github
+      title: GitHub
+      url: "https://github.com/monstercjz/PaperMod-blog-cf"
+    - name: QQ
+      title: QQ
+      url: "https://qm.qq.com/cgi-bin/qm/qr?k=YOUR_QQ_KEY"
+    - name: telegram
+      title: Telegram
+      url: "https://t.me/YOUR_TELEGRAM"
 
   # ---------- 文章编辑链接 ----------
   editPost:
