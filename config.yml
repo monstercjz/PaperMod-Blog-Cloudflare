@@ -6,8 +6,8 @@ module:
     - path: github.com/adityatelange/hugo-PaperMod
     - path: github.com/monstercjz/blog-content
       mounts:
-        - source: blog-paper          # 内容仓库的posts目录
-          target: content/posts  # 挂载到 content/posts
+        - source: blog-paper          # 内容仓库的blog-paper目录
+          target: content/blog-paper  # 挂载到 content/blog-paper
 
 # ============================================================
 # Hugo 网站基础配置
@@ -29,7 +29,7 @@ buildFuture: false              # 是否构建未来日期的文章
 buildExpired: false             # 是否构建已过期的文章
 enableEmoji: true               # 启用 Emoji 支持
 pygmentsUseClasses: true        # 使用 CSS 类进行代码高亮
-mainsections: ["posts"]         # 主内容分区，用于首页显示
+mainsections: ["blog-paper"]         # 主内容分区，用于首页显示
 
 # ============================================================
 # 压缩配置
@@ -61,7 +61,7 @@ languages:
     menu:                       # 导航菜单配置
       main:
         - name: 📌 全部文章     # 显示名称
-          url: posts/           # 链接地址
+          url: blog-paper/           # 链接地址
           weight: 1             # 排序权重（越小越靠前）
         - name: 📂 归档
           url: archives
@@ -89,8 +89,8 @@ languages:
       series: series
     menu:
       main:
-        - name: 📌 All Posts    # Display name
-          url: posts/           # URL
+        - name: 📌 All blog-paper    # Display name
+          url: blog-paper/           # URL
           weight: 1             # Weight (smaller = earlier)
         - name: 📂 Archive
           url: archives
@@ -204,7 +204,7 @@ params:
   # ---------- 文章编辑链接 ----------
   editPost:
     URL: "https://github.com/monstercjz/blog-content/edit/main/"  # 编辑链接基础地址（指向内容仓库）
-    Text: "编辑此页"              # 编辑按钮文字
+    Text: "📝 编辑此页"              # 编辑按钮文字
     appendFilePath: true         # 是否在编辑链接后附加文件路径
 
   # ---------- 网站标签配置 ----------

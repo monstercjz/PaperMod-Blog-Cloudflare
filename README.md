@@ -42,14 +42,14 @@ hugo server -D
 
 ## 写作指南
 
-详见文章：[如何撰写博客文章](https://paper.nuaa.dpdns.org/posts/how-to-write-post/)
+详见文章：[如何撰写博客文章](https://paper.nuaa.dpdns.org/blog-paper/how-to-write-post/)
 
 ## 目录结构
 
 ```
 ├── config.yml          # 配置文件
 ├── content/            # 文章内容
-│   └── posts/          # 博客文章
+│   └── blog-paper/          # 博客文章
 ├── assets/             # 静态资源
 │   ├── css/            # 自定义样式
 │   └── images/         # 图片资源
