@@ -203,7 +203,7 @@ params:
 
   # ---------- 文章编辑链接 ----------
   editPost:
-    URL: "https://github.com/monstercjz/blog-content/edit/main/"  # 编辑链接基础地址（指向内容仓库）
+    URL: "https://github.com/monstercjz/blog-content/edit/main/../"  # 编辑链接基础地址（指向内容仓库）
     Text: "编辑此页"              # 编辑按钮文字
     appendFilePath: true         # 是否在编辑链接后附加文件路径
 
