@@ -13,7 +13,7 @@
 
 ## 博客地址
 
-[https://blog.nuaa.dpdns.org/](https://blog.nuaa.dpdns.org/)
+[https://paper.nuaa.dpdns.org/](https://paper.nuaa.dpdns.org/)
 
 ## 功能特性
 
@@ -42,7 +42,7 @@ hugo server -D
 
 ## 写作指南
 
-详见文章：[如何撰写博客文章](https://blog.nuaa.dpdns.org/posts/how-to-write-post/)
+详见文章：[如何撰写博客文章](https://paper.nuaa.dpdns.org/posts/how-to-write-post/)
 
 ## 目录结构
 

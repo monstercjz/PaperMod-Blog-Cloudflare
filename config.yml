@@ -15,9 +15,9 @@ module:
 
 # 如果你的网站使用 'https'，请确保 base url 不是 'http' 开头，
 # 否则站点地图会包含 http（而非 https）URL，这会影响 Google 索引。
-baseURL: "https://blog.nuaa.dpdns.org/"
+baseURL: "https://paper.nuaa.dpdns.org/"
 title: 冇记                                          # 网站标题
-copyright: "© 冇文化 · [冇记](https://blog.nuaa.dpdns.org/)"  # 页脚版权信息
+copyright: "© 冇文化 · [冇记](https://paper.nuaa.dpdns.org/)"  # 页脚版权信息
 
 # ============================================================
 # Hugo 构建配置
