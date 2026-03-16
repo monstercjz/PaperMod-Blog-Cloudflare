@@ -18,3 +18,4 @@ node_modules/
 # Misc
 .env
 *.log
+PaperMod-Blog-Cloudflare.code-workspace
