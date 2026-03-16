@@ -189,7 +189,7 @@ params:
   # ---------- HomeInfoParams：首页欢迎信息模式 ----------
   # 与 profileMode 二选一，profileMode.enabled 为 false 时生效
   homeInfoParams:
-    Title: "📖 学习 · ✍️ 记录 · 🌐 分享 "
+    Title: "📖 学习   ✍️ 记录   🌐 分享 "
     Content: >
       👋欢迎来到冇记！🎉 🎉
 
@@ -199,7 +199,7 @@ params:
 
       - 愿路过的你，能在这里找到一点你需要的。
 
-      🏡🌈🍉🌟📍🎆🎇🧨🧨👋✨ ✨
+      /n🏡🌈🍉🌟📍🎆🎇🧨🧨👋✨ ✨
 
 
   # ---------- 社交媒体图标 ----------
