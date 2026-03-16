@@ -143,7 +143,7 @@ params:
   # disableThemeToggle: true    # 禁用主题切换按钮
 
   # ---------- 功能开关 ----------
-  ShowShareButtons: true        # 显示分享按钮
+  ShowShareButtons: false        # 显示分享按钮
   ShowReadingTime: true         # 显示阅读时间
   # disableSpecial1stPost: true # 禁用首篇文章特殊样式
   displayFullLangName: true     # 显示完整语言名称
@@ -154,6 +154,8 @@ params:
   ShowAllPagesInArchive: true   # 在归档页显示所有页面
   ShowPageNums: true            # 显示页码
   ShowToc: true                 # 显示文章目录（Table of Contents）
+  ShowEditPost: false            # 编辑按钮
+  ShowSummary: true             # 显示摘要
   # comments: false             # 评论功能
 
   images: ["images/cover.png"]   # 社交分享时的默认封面图
