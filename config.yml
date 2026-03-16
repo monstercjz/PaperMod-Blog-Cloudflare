@@ -3,6 +3,7 @@
 # ============================================================
 module:
   imports:
+    - path: github.com/adityatelange/hugo-PaperMod
     - path: github.com/monstercjz/blog-content
   mounts:
     - source: content
@@ -17,7 +18,6 @@ module:
 baseURL: "https://blog.nuaa.dpdns.org/"
 title: 冇记                                          # 网站标题
 copyright: "© 冇文化 · [冇记](https://blog.nuaa.dpdns.org/)"  # 页脚版权信息
-theme: [hugo-PaperMod]                                   # 使用的主题
 
 # ============================================================
 # Hugo 构建配置
