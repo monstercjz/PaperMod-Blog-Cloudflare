@@ -176,28 +176,28 @@ params:
   profileMode:
     enabled: true              # 是否启用 ProfileMode
     title: 冇记                 # 大标题
-    imageUrl: "#"               # 头像图片地址
-    imageTitle: my image        # 图片 alt 文本
+    imageUrl: "/static/android-chrome-512x512.png"               # 头像图片地址
+    imageTitle: 冇文化的头像    # 图片 alt 文本
     # imageWidth: 120           # 头像宽度
     # imageHeight: 120          # 头像高度
-    buttons:                    # 首页快捷按钮
-      - name: Archives
-        url: archives
-      - name: Tags
-        url: tags
+    # buttons:                    # 首页快捷按钮
+    #   - name: Archives
+    #     url: archives
+    #   - name: Tags
+    #     url: tags
 
   # ---------- HomeInfoParams：首页欢迎信息模式 ----------
   # 与 profileMode 二选一，profileMode.enabled 为 false 时生效
   homeInfoParams:
     Title: "冇记"
     Content: >
-      👋 欢迎来到冇记！
+      🧨🧨👋 欢迎来到冇记！🎉🎉
 
-      - 本博客主人叫冇文化，故简称 冇记。
+      - ✨ 本博客主人叫冇文化，故简称 冇记。
 
-      - 这里没有高深理论，只有点滴的记录。
+      - ✨ 这里没有高深理论，只有点滴的记录。
 
-      - 愿路过的你，能在这里找到一点你需要的。
+      - ✨ 愿路过的你，能在这里找到一点你需要的。
 
 
   # ---------- 社交媒体图标 ----------
