@@ -1,0 +1,20 @@
+# Hugo
+/public/
+/resources/_gen/
+.hugo_build.lock
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+/.history/
+.idea/
+*.swp
+
+# Node (如果使用)
+node_modules/
+
+# Misc
+.env
+*.log

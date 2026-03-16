@@ -1,0 +1,283 @@
+# ============================================================
+# Hugo 网站基础配置
+# ============================================================
+
+# 如果你的网站使用 'https'，请确保 base url 不是 'http' 开头，
+# 否则站点地图会包含 http（而非 https）URL，这会影响 Google 索引。
+baseURL: "https://blog.nuaa.dpdns.org/"
+title: 冇记                                          # 网站标题
+copyright: "© 冇文化 · [冇记](https://blog.nuaa.dpdns.org/)"  # 页脚版权信息
+theme: [hugo-PaperMod]                                   # 使用的主题
+
+# ============================================================
+# Hugo 构建配置
+# ============================================================
+enableInlineShortcodes: true    # 启用内联短代码
+enableRobotsTXT: true           # 自动生成 robots.txt
+buildDrafts: false              # 是否构建草稿文章
+buildFuture: false              # 是否构建未来日期的文章
+buildExpired: false             # 是否构建已过期的文章
+enableEmoji: true               # 启用 Emoji 支持
+pygmentsUseClasses: true        # 使用 CSS 类进行代码高亮
+mainsections: ["posts"]         # 主内容分区，用于首页显示
+
+# ============================================================
+# 压缩配置
+# ============================================================
+minify:
+  disableXML: true              # 禁用 XML 压缩
+  # minifyOutput: true          # 是否压缩输出
+
+# ============================================================
+# 分页配置
+# ============================================================
+pagination:
+  disableAliases: false
+  pagerSize: 5                  # 每页显示文章数量
+
+# ============================================================
+# 多语言配置
+# ============================================================
+defaultContentLanguage: zh       # 默认内容语言
+languages:
+  # ---------- 中文（默认语言）----------
+  zh:
+    languageName: "中文"
+    weight: 1                   # 权重越小，优先级越高
+    taxonomies:                 # 分类法配置
+      category: categories
+      tag: tags
+      series: series
+    menu:                       # 导航菜单配置
+      main:
+        - name: 📌 全部文章     # 显示名称
+          url: posts/           # 链接地址
+          weight: 1             # 排序权重（越小越靠前）
+        - name: 📂 归档
+          url: archives
+          weight: 5
+        - name: 🔍 搜索
+          url: search/
+          weight: 10
+        - name: 🏷️ 标签
+          url: tags/
+          weight: 15
+        - name: 📁 分类
+          url: categories/
+          weight: 18
+        - name: GitHub
+          url: https://github.com/monstercjz/PaperMod-blog-cf
+          weight: 20
+
+  # ---------- 英语 ----------
+  en:
+    languageName: "English"
+    weight: 2
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - name: 📌 All Posts    # Display name
+          url: posts/           # URL
+          weight: 1             # Weight (smaller = earlier)
+        - name: 📂 Archive
+          url: archives
+          weight: 5
+        - name: 🔍 Search
+          url: search/
+          weight: 10
+        - name: 🏷️ Tags
+          url: tags/
+          weight: 15
+        - name: 📁 Categories
+          url: categories/
+          weight: 18
+        - name: GitHub
+          url: https://github.com/monstercjz/PaperMod-blog-cf
+          weight: 20
+
+# ============================================================
+# 输出格式配置
+# ============================================================
+outputFormats:
+  llms:
+    mediaType: "text/plain"
+    baseName: "llms"
+    isPlainText: true
+    notAlternative: true
+
+# ============================================================
+# 输出配置（定义首页生成哪些格式）
+# ============================================================
+outputs:
+  home:
+    - HTML                      # HTML 页面
+    - RSS                       # RSS 订阅
+    - JSON                      # JSON 格式（用于搜索）
+    - llms                      # AI/LLM 可读格式
+
+# ============================================================
+# 主题参数配置（PaperMod 主题特有）
+# ============================================================
+params:
+  # ---------- 基础参数 ----------
+  env: production               # 环境：production 启用 Google Analytics、OpenGraph、Twitter Cards 和 Schema
+  description: "冇记 - 冇文化的日常记录博客"  # 网站描述（SEO）
+  author: 冇文化                  # 作者名称
+  # author: ["Me", "You"]       # 多作者模式
+
+  # ---------- 主题外观 ----------
+  defaultTheme: auto            # 默认主题：auto（跟随系统）、light（浅色）、dark（深色）
+  # disableThemeToggle: true    # 禁用主题切换按钮
+
+  # ---------- 功能开关 ----------
+  ShowShareButtons: true        # 显示分享按钮
+  ShowReadingTime: true         # 显示阅读时间
+  # disableSpecial1stPost: true # 禁用首篇文章特殊样式
+  displayFullLangName: true     # 显示完整语言名称
+  ShowPostNavLinks: true        # 显示上一篇/下一篇导航
+  ShowBreadCrumbs: true         # 显示面包屑导航
+  ShowCodeCopyButtons: true     # 显示代码复制按钮
+  ShowRssButtonInSectionTermList: true  # 在分类列表显示 RSS 按钮
+  ShowAllPagesInArchive: true   # 在归档页显示所有页面
+  ShowPageNums: true            # 显示页码
+  ShowToc: true                 # 显示文章目录（Table of Contents）
+  # comments: false             # 评论功能
+
+  images: ["images/cover.png"]   # 社交分享时的默认封面图
+
+
+  # ---------- ProfileMode：首页个人资料模式 ----------
+  # 与 homeInfoParams 二选一，enabled 为 true 时生效
+  profileMode:
+    enabled: false              # 是否启用 ProfileMode
+    title: 冇记                 # 大标题
+    imageUrl: "#"               # 头像图片地址
+    imageTitle: my image        # 图片 alt 文本
+    # imageWidth: 120           # 头像宽度
+    # imageHeight: 120          # 头像高度
+    buttons:                    # 首页快捷按钮
+      - name: Archives
+        url: archives
+      - name: Tags
+        url: tags
+
+  # ---------- HomeInfoParams：首页欢迎信息模式 ----------
+  # 与 profileMode 二选一，profileMode.enabled 为 false 时生效
+  homeInfoParams:
+    Title: "冇记"
+    Content: >
+      👋 欢迎来到冇记！
+
+      - 本博客主人叫冇文化，故简称 冇记。
+
+      - 这里没有高深理论，只有点滴的记录。
+
+      - 愿路过的你，能在这里找到一点你需要的。
+
+
+  # ---------- 社交媒体图标 ----------
+  # 显示在页面底部的社交链接图标
+  # socialIcons:
+  #   - name: github
+  #     title: GitHub
+  #     url: "https://github.com/monstercjz/PaperMod-blog-cf"
+  #   - name: QQ
+  #     title: QQ
+  #     url: "https://qm.qq.com/cgi-bin/qm/qr?k=YOUR_QQ_KEY"
+  #   - name: telegram
+  #     title: Telegram
+  #     url: "https://t.me/YOUR_TELEGRAM"
+
+  # ---------- 文章编辑链接 ----------
+  editPost:
+    URL: "https://github.com/monstercjz/PaperMod-blog-cf/tree/exampleSite/content/"  # 编辑链接基础地址
+    Text: "编辑此页"              # 编辑按钮文字
+    appendFilePath: true         # 是否在编辑链接后附加文件路径
+
+  # ---------- 网站标签配置 ----------
+  # label:
+  # iconSVG: '<svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 -960 960 960" fill="currentColor"><path d="M320-240h320v-80H320v80Zm0-160h320v-80H320v80ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"/></svg>'
+  # text: "Home"                # 标签文字
+  # icon: icon.png              # 标签图标
+  # iconHeight: 35              # 图标高度
+  # ---------- Google Analytics 配置 ----------
+  # analytics:
+  #     google:
+  #         SiteVerificationTag: "XYZabc"
+
+  # ---------- 静态资源配置 ----------
+  assets:
+    disableHLJS: true   # 禁用 Hugo 内置代码高亮，使用主题自带
+    favicon: "favicon.ico"
+    favicon16x16: "favicon.ico"
+    favicon32x32: "favicon.ico"
+    apple_touch_icon: "apple-touch-icon.png"
+  #     favicon: "<link / abs url>"           # 网站图标
+  #     favicon16x16: "<link / abs url>"      # 16x16 图标
+  #     favicon32x32: "<link / abs url>"      # 32x32 图标
+  #     apple_touch_icon: "<link / abs url>"  # iOS 桌面图标
+  #     safari_pinned_tab: "<link / abs url>" # Safari 固定标签图标
+
+  # ---------- 文章封面图配置 ----------
+  # cover:
+  #     hidden: true            # 在所有地方隐藏，但结构数据中保留
+  #     hiddenInList: true      # 在列表页和首页隐藏
+  #     hiddenInSingle: true    # 在文章页隐藏
+
+  # ---------- 搜索功能配置（Fuse.js 选项）----------
+  # fuseOpts:
+  #     isCaseSensitive: false  # 是否区分大小写
+  #     shouldSort: true        # 是否排序
+  #     location: 0
+  #     distance: 1000
+  #     threshold: 0.4          # 匹配阈值
+  #     minMatchCharLength: 0   # 最小匹配字符数
+  #     keys: ["title", "permalink", "summary", "content"]  # 搜索字段
+
+# ============================================================
+# Markdown 渲染配置
+# ============================================================
+markup:
+  goldmark:
+    renderer:
+      unsafe: true              # 允许渲染 HTML 标签
+  highlight:
+    noClasses: false            # 使用 CSS 类进行代码高亮（支持自定义样式）
+    # anchorLineNos: true       # 行号锚点
+    # codeFences: true          # 代码围栏
+    # guessSyntax: true         # 自动猜测语法
+    # lineNos: true             # 显示行号
+    # style: monokai            # 高亮主题
+
+# ============================================================
+# 隐私配置（增强第三方嵌入的隐私保护）
+# ============================================================
+# privacy:
+#   vimeo:
+#     disabled: false
+#     simple: true
+# 
+#   twitter:
+#     disabled: false
+#     enableDNT: true           # 启用 Do Not Track
+#     simple: true
+# 
+#   instagram:
+#     disabled: false
+#     simple: true
+# 
+#   youtube:
+#     disabled: false
+#     privacyEnhanced: true     # 隐私增强模式
+
+# ============================================================
+# 第三方服务配置
+# ============================================================
+services:
+  instagram:
+    disableInlineCSS: true      # 禁用内联 CSS
+  x:
+    disableInlineCSS: true      # 禁用内联 CSS
