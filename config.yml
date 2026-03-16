@@ -90,7 +90,7 @@ languages:
     menu:
       main:
         - name: 📌 All Posts    # Display name
-          url: posts/           # URL
+          url: .           # URL
           weight: 1             # Weight (smaller = earlier)
         - name: 📂 Archive
           url: archives
