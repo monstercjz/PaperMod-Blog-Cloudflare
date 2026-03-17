@@ -60,7 +60,7 @@ languages:
       series: series
     menu:                       # 导航菜单配置
       main:
-        - name: 📝 全部文章     # 显示名称
+        - name: 📚 全部文章     # 显示名称
           url: /blog-paper/     # 链接地址 (建议前面加个 / 变成绝对路径更稳妥)
           weight: 1             # 排序权重
           title: "浏览博客的所有文章列表" # 👈 新增：鼠标悬停时显示的文字
@@ -101,7 +101,7 @@ languages:
       series: series
     menu:
       main:
-        - name: 📝 All blog-paper    # Display name
+        - name: 📚 All blog-paper    # Display name
           url: blog-paper/           # URL
           weight: 1             # Weight (smaller = earlier)
         - name: 🗂️ Archive
