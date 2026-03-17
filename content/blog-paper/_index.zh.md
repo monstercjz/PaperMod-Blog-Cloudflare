@@ -1,6 +1,6 @@
 ---
-title: "📄 全部文章"
-description: "所有文章列表"
+title: "📝 全部文章"
+description: "📌 所有文章列表"
 keywords: ["博客", "文章"]               # SEO关键词
 date: 2026-03-16                         # 日期
 lastmod: 2026-03-16                      # 最后修改时间

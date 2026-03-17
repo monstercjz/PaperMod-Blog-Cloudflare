@@ -60,11 +60,11 @@ languages:
       series: series
     menu:                       # 导航菜单配置
       main:
-        - name: 📌 全部文章     # 显示名称
+        - name: 📝 全部文章     # 显示名称
           url: /blog-paper/     # 链接地址 (建议前面加个 / 变成绝对路径更稳妥)
           weight: 1             # 排序权重
           title: "浏览博客的所有文章列表" # 👈 新增：鼠标悬停时显示的文字
-        - name: 📂 归档
+        - name: 🗂️ 归档
           url: /archives/
           weight: 5
           title: "按时间线查看历史文章"   # 👈 新增
@@ -79,7 +79,7 @@ languages:
           weight: 15
           title: "按标签聚合筛选文章"     # 👈 新增
 
-        - name: 📁 分类
+        - name: 📂 分类
           url: /categories/
           weight: 18
           title: "按分类聚合筛选文章"     # 👈 新增
@@ -101,10 +101,10 @@ languages:
       series: series
     menu:
       main:
-        - name: 📌 All blog-paper    # Display name
+        - name: 📝 All blog-paper    # Display name
           url: blog-paper/           # URL
           weight: 1             # Weight (smaller = earlier)
-        - name: 📂 Archive
+        - name: 🗂️ Archive
           url: archives
           weight: 5
         - name: 🔍 Search
@@ -113,7 +113,7 @@ languages:
         - name: 🏷️ Tags
           url: tags/
           weight: 15
-        - name: 📁 Categories
+        - name: 📂 Categories
           url: categories/
           weight: 18
         - name: GitHub
