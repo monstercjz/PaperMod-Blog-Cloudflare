@@ -167,7 +167,7 @@ params:
   ShowPageNums: true            # 显示页码
   ShowToc: true                 # 显示文章目录（Table of Contents）
   # comments: false             # 评论功能
-  titleInHeader: false
+  titleInHeader: true
   images: ["images/cover.png"]   # 社交分享时的默认封面图
 
 
